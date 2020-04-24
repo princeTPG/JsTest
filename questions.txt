@@ -1,0 +1,65 @@
+Create a function that takes two arguments (num, length) and returns an array of multiples of num up to length.
+
+	Examples
+arrayOfMultiples(7, 5) ➞ [7, 14, 21, 28, 35]
+arrayOfMultiples(12, 10) ➞ [12, 24, 36, 48, 60, 72, 84, 96, 108, 120]
+arrayOfMultiples(17, 6) ➞ [17, 34, 51, 68, 85, 102]
+
+
+Create a function that takes an array of numbers as an argument and return "I got 3!" if the number 3 appears in the array. Otherwise, return "there is no 3 in the array".
+
+	Examples
+findThree([1, 2, 3, 4, 5, 6, 7]) ➞ "I got 3!"
+findThree([8, 6, 33, 100]) ➞ "I got 3!"
+findThree([2, 55, 60, 97, 86]) ➞ "there is no 3 in the array"
+
+Create a function that returns true if two arrays contain identical values, and false otherwise.
+
+	To solve this question, someone wrote the following code:
+
+function isEquals(arr1, arr2) {
+ if (arr1 === arr2) {
+  return true
+ } else {
+  return false
+ }
+}
+
+But testing the code, you see that something is not quite right. Running the code yields the following results:
+
+isEquals([1, 2], [1, 3]) ➞ false
+// Good so far...
+
+isEquals([1, 2], [1, 2]) ➞ false
+// Yikes! What happened?
+
+Rewrite the code so that it correctly checks if two arrays are equal. The tests below should pass:
+
+Examples
+isEquals([1, 2], [1, 3]) ➞ false
+isEquals([1, 2], [1, 2]) ➞ true
+isEquals([4, 5, 6], [4, 5, 6]) ➞ true
+isEquals([4, 7, 6], [4, 5, 6]) ➞ false
+
+Create a function that takes a variable number of arguments as groups of items, and returns the number of ways the items can be arranged, with one item from each group. Order does not matter.
+
+Examples
+waysToArrange(2, 3) ➞ 6
+waysToArrange(3, 7, 4) ➞ 84
+waysToArrange(2, 3, 4, 5) ➞ 120
+
+Create a function that takes an integer n, reverses the binary representation of that integer, and returns the new integer from the reversed binary.
+
+	Examples
+reversedBinary(10) ➞ 5
+// 10 = 1010 -> 0101 = 5
+
+reversedBinary(12) ➞ 3
+// 12 = 1100 -> 0011 = 3
+
+reversedBinary(25) ➞ 19
+// 25 = 11001 -> 10011 = 19
+
+reversedBinary(45) ➞ 45
+// 45 = 101101 -> 101101 = 45
+
